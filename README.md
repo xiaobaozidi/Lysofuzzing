@@ -9,7 +9,25 @@ To run Lyso on the Magma benchmark, follow the [official Magma instructions](htt
 We provide a modified `magma_dgf` directory, which includes changes to the benchmark environment settings. Please use this version for compatibility.  
 
 The `magma_dgf` currently supports multiple DGFs, including **Lyso**, **Titan**, **SelectFuzz**, **AFLGo**, and **FishFuzz**.  
-Our goal is to integrate more DGFs into this benchmark, so feel free to contribute additional ones.
+One challenge in evaluating DGFs is that they often use different benchmarks, making it difficult to compare their effectiveness.  
+Our goal is to integrate more DGFs into a standardized benchmark, so feel free to contribute additional ones.
+
+## 3. Lyso Structure
+lyso
+├── build.sh    
+├── compilei\_fuzzer.sh
+├── fetch.sh
+├── findings.sh
+├── instrument.sh
+├── llvmpass
+├── preinstall.sh
+├── repo
+├── runonce.sh
+├── run.sh
+├── scripts
+├── src
+└── targets
+
 
 
 
