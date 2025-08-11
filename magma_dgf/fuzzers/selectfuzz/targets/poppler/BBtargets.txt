@@ -1,0 +1,14 @@
+Splash.cc:5689
+SplashXPathScanner.cc:454
+FoFiType1C.cc:1292
+FoFiType1C.cc:1536
+JBIG2Stream.cc:816
+JPEG2000Stream.cc:255
+Stream.cc:590
+Stream.cc:609
+Annot.cc:6055
+GfxState.cc:4831
+XRef.cc:1678
+SplashOutputDev.cc:2460
+ImageOutputDev.cc:407
+HtmlOutputDev.cc:1406

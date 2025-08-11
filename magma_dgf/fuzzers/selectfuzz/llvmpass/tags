@@ -1,0 +1,83 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/home/bao/magma/fuzzers/selectfuzz/llvmpass/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	//
+CMAKE_BUILD_TYPE	CMakeLists.txt	/^set(CMAKE_BUILD_TYPE Debug)$/;"	v
+DFUZZPASS	CMakeLists.txt	/^add_library(DFUZZPASS MODULE$/;"	t
+DFUZZPASS	DFUZZPASS.cpp	/^    DFUZZPASS(): ModulePass(ID) {$/;"	f	struct:__anonb3b551400111::DFUZZPASS	file:
+DFUZZPASS	DFUZZPASS.cpp	/^  struct DFUZZPASS: public ModulePass {$/;"	s	namespace:__anonb3b551400111	file:
+ID	DFUZZPASS.cpp	/^      static char ID;$/;"	m	struct:__anonb3b551400111::DFUZZPASS	typeref:typename:char	file:
+ID	DFUZZPASS.cpp	/^char DFUZZPASS::ID = 0;$/;"	m	class:DFUZZPASS	typeref:typename:char
+LLVMInstructionAsString	DFUZZPASS.cpp	/^static std::string LLVMInstructionAsString(Instruction * I) {$/;"	f	typeref:typename:std::string	file:
+LLVM_OLD_DEBUG_API	DFUZZPASS.cpp	/^#define LLVM_OLD_DEBUG_API$/;"	d	file:
+OutDirectory	DFUZZPASS.cpp	/^cl::opt < std::string > OutDirectory($/;"	v	typeref:typename:cl::opt<std::string>
+TargetsFile	DFUZZPASS.cpp	/^cl::opt < std::string > TargetsFile($/;"	v	typeref:typename:cl::opt<std::string>
+X	DFUZZPASS.cpp	/^static RegisterPass < DFUZZPASS > X("DFUZZPASS", "DFUZZ Pass", false, false);$/;"	v	typeref:typename:RegisterPass<DFUZZPASS>	file:
+__anonb3b551400111	DFUZZPASS.cpp	/^namespace {$/;"	n	file:
+all_bb	DFUZZPASS.cpp	/^    std::set < Value * > all_bb;$/;"	m	struct:__anonb3b551400111::DFUZZPASS	typeref:typename:std::set<Value * >	file:
+bb_num	DFUZZPASS.cpp	/^std::map < Value*, int> bb_num;$/;"	v	typeref:typename:std::map<Value *,int>
+brIns	DFUZZPASS.cpp	/^    std::set < Value * > brIns;$/;"	m	struct:__anonb3b551400111::DFUZZPASS	typeref:typename:std::set<Value * >	file:
+checkType	DFUZZPASS.cpp	/^bool checkType(Function* func, CallInst* callinst) {$/;"	f	typeref:typename:bool
+checkType1	DFUZZPASS.cpp	/^bool checkType1(Function* func, InvokeInst* callinst) {$/;"	f	typeref:typename:bool
+ctrl_rel	DFUZZPASS.cpp	/^    Value * > ctrl_rel;$/;"	m	struct:__anonb3b551400111::DFUZZPASS	typeref:typename:std::multimap<Value *,Value * >	file:
+ctrl_save	DFUZZPASS.cpp	/^std::map< Value *, std::set < Value * >> ctrl_save;$/;"	v	typeref:typename:std::map<Value *,std::set<Value * >>
+data_flow_edges	DFUZZPASS.cpp	/^    edge_list data_flow_edges;$/;"	m	struct:__anonb3b551400111::DFUZZPASS	typeref:typename:edge_list	file:
+data_rel	DFUZZPASS.cpp	/^    Value * > data_rel;$/;"	m	struct:__anonb3b551400111::DFUZZPASS	typeref:typename:std::multimap<Value *,Value * >	file:
+dumpControlflowEdges	DFUZZPASS.cpp	/^    bool dumpControlflowEdges(std::ofstream & Out, llvm::Function & F)  {$/;"	f	struct:__anonb3b551400111::DFUZZPASS	typeref:typename:bool	file:
+dumpDataflowEdges	DFUZZPASS.cpp	/^    bool dumpDataflowEdges(std::ofstream & Out) {$/;"	f	struct:__anonb3b551400111::DFUZZPASS	typeref:typename:bool	file:
+dumpFunctionArguments	DFUZZPASS.cpp	/^    bool dumpFunctionArguments(std::ofstream & Out, Function & F)  {$/;"	f	struct:__anonb3b551400111::DFUZZPASS	typeref:typename:bool	file:
+dumpFunctionCalls	DFUZZPASS.cpp	/^    bool dumpFunctionCalls(std::ofstream & Out)  {$/;"	f	struct:__anonb3b551400111::DFUZZPASS	typeref:typename:bool	file:
+dumpGlobals	DFUZZPASS.cpp	/^    bool dumpGlobals(std::ofstream & Out)  {$/;"	f	struct:__anonb3b551400111::DFUZZPASS	typeref:typename:bool	file:
+dumpNodes	DFUZZPASS.cpp	/^    bool dumpNodes(std::ofstream & Out, llvm::Function & F)  {$/;"	f	struct:__anonb3b551400111::DFUZZPASS	typeref:typename:bool	file:
+edge	DFUZZPASS.cpp	/^typedef std::pair < node, node > edge;$/;"	t	typeref:typename:std::pair<node,node>	file:
+edge_list	DFUZZPASS.cpp	/^typedef std::list < edge > edge_list;$/;"	t	typeref:typename:std::list<edge>	file:
+exec	DFUZZPASS.cpp	/^std::string exec(const char* cmd) {$/;"	f	typeref:typename:std::string
+find_pro	DFUZZPASS.cpp	/^void find_pro (Value *val, std::vector < Value * > targetIns, std::set <Value *> in_set) {$/;"	f	typeref:typename:void
+funcToCall	DFUZZPASS.cpp	/^    std::map < Function*, std::set<Value* >> funcToCall;$/;"	m	struct:__anonb3b551400111::DFUZZPASS	typeref:typename:std::map<Function *,std::set<Value * >>	file:
+func_args	DFUZZPASS.cpp	/^    node_list > func_args;$/;"	m	struct:__anonb3b551400111::DFUZZPASS	typeref:typename:std::map<Function *,node_list>	file:
+func_calls	DFUZZPASS.cpp	/^    Function * > func_calls;$/;"	m	struct:__anonb3b551400111::DFUZZPASS	typeref:typename:std::map<Value *,Function * >	file:
+func_edges_ctrl	DFUZZPASS.cpp	/^    edge_list > func_edges_ctrl;$/;"	m	struct:__anonb3b551400111::DFUZZPASS	typeref:typename:std::map<Function *,edge_list>	file:
+func_icalls	DFUZZPASS.cpp	/^    std::set <Function *> > func_icalls;$/;"	m	struct:__anonb3b551400111::DFUZZPASS	typeref:typename:std::map<Value *,std::set<Function * >>	file:
+func_nodes_ctrl	DFUZZPASS.cpp	/^    node_list > func_nodes_ctrl;$/;"	m	struct:__anonb3b551400111::DFUZZPASS	typeref:typename:std::map<Function *,node_list>	file:
+func_rets	DFUZZPASS.cpp	/^    node_list > func_rets;$/;"	m	struct:__anonb3b551400111::DFUZZPASS	typeref:typename:std::map<Function *,node_list>	file:
+functionAbsLoc	DFUZZPASS.cpp	/^    std::map < std::string, Function * > functionAbsLoc;$/;"	m	struct:__anonb3b551400111::DFUZZPASS	typeref:typename:std::map<std::string,Function * >	file:
+functionLoc	DFUZZPASS.cpp	/^    std::map < std::string, Function * > functionLoc;$/;"	m	struct:__anonb3b551400111::DFUZZPASS	typeref:typename:std::map<std::string,Function * >	file:
+functionMap	DFUZZPASS.cpp	/^    std::map < std::string, Function * > functionMap; $/;"	m	struct:__anonb3b551400111::DFUZZPASS	typeref:typename:std::map<std::string,Function * >	file:
+functionSet	DFUZZPASS.cpp	/^    std::set < Function* > functionSet;$/;"	m	struct:__anonb3b551400111::DFUZZPASS	typeref:typename:std::set<Function * >	file:
+functionStart	DFUZZPASS.cpp	/^    std::set < std::string > functionStart;$/;"	m	struct:__anonb3b551400111::DFUZZPASS	typeref:typename:std::set<std::string>	file:
+getDebugLoc	DFUZZPASS.cpp	/^static void getDebugLoc(const Instruction * I, std::string & Filename,$/;"	f	typeref:typename:void	file:
+getSpecLine	DFUZZPASS.cpp	/^std::string getSpecLine(std::string file, std::string line) {$/;"	f	typeref:typename:std::string
+getvaluestaticname	DFUZZPASS.cpp	/^static std::string getvaluestaticname(Value * val) {$/;"	f	typeref:typename:std::string	file:
+getvaluestaticname1	DFUZZPASS.cpp	/^static std::string getvaluestaticname1(Value * val) {$/;"	f	typeref:typename:std::string	file:
+globals	DFUZZPASS.cpp	/^    std::list < node > globals;$/;"	m	struct:__anonb3b551400111::DFUZZPASS	typeref:typename:std::list<node>	file:
+hasAnaFunctionSet	DFUZZPASS.cpp	/^    std::set < Function* > hasAnaFunctionSet;$/;"	m	struct:__anonb3b551400111::DFUZZPASS	typeref:typename:std::set<Function * >	file:
+hasCallsite	DFUZZPASS.cpp	/^    std::set < Function* > hasCallsite;$/;"	m	struct:__anonb3b551400111::DFUZZPASS	typeref:typename:std::set<Function * >	file:
+ictrl_save	DFUZZPASS.cpp	/^std::map< Value *, std::set < Value * >> ictrl_save;$/;"	v	typeref:typename:std::map<Value *,std::set<Value * >>
+indent	DFUZZPASS.cpp	/^std::string indent = "";$/;"	v	typeref:typename:std::string
+indirectCallSiteLoc	DFUZZPASS.cpp	/^    std::map < std::string, Instruction * > indirectCallSiteLoc;$/;"	m	struct:__anonb3b551400111::DFUZZPASS	typeref:typename:std::map<std::string,Instruction * >	file:
+indirectSave	DFUZZPASS.cpp	/^    std::map < std::string, std::set < std::string> > indirectSave;$/;"	m	struct:__anonb3b551400111::DFUZZPASS	typeref:typename:std::map<std::string,std::set<std::string>>	file:
+invokeLoc	DFUZZPASS.cpp	/^    std::map < std::string, Instruction * > invokeLoc;$/;"	m	struct:__anonb3b551400111::DFUZZPASS	typeref:typename:std::map<std::string,Instruction * >	file:
+map_bb	DFUZZPASS.cpp	/^    std::string > map_bb;$/;"	m	struct:__anonb3b551400111::DFUZZPASS	typeref:typename:std::map<BasicBlock *,std::string>	file:
+min	DFUZZPASS.cpp	/^float min=1;$/;"	v	typeref:typename:float
+node	DFUZZPASS.cpp	/^typedef std::pair < Value * , std::string > node;$/;"	t	typeref:typename:std::pair<Value *,std::string>	file:
+node_list	DFUZZPASS.cpp	/^typedef std::list < node > node_list;$/;"	t	typeref:typename:std::list<node>	file:
+num	DFUZZPASS.cpp	/^static unsigned int num = 0;$/;"	v	typeref:typename:unsigned int	file:
+pro_map	DFUZZPASS.cpp	/^std::map < Value *,  float> pro_map;$/;"	v	typeref:typename:std::map<Value *,float>
+reals	DFUZZPASS.cpp	/^    std::list < std::string > reals;$/;"	m	struct:__anonb3b551400111::DFUZZPASS	typeref:typename:std::list<std::string>	file:
+rel_bb	DFUZZPASS.cpp	/^    std::set < BasicBlock * > rel_bb;$/;"	m	struct:__anonb3b551400111::DFUZZPASS	typeref:typename:std::set<BasicBlock * >	file:
+rel_ins	DFUZZPASS.cpp	/^    std::set < Value * > rel_ins;$/;"	m	struct:__anonb3b551400111::DFUZZPASS	typeref:typename:std::set<Value * >	file:
+remove_special_chars	DFUZZPASS.cpp	/^    std::string remove_special_chars(std::string in_str) {$/;"	f	struct:__anonb3b551400111::DFUZZPASS	typeref:typename:std::string	file:
+ret_call	DFUZZPASS.cpp	/^    Value * > ret_call;$/;"	m	struct:__anonb3b551400111::DFUZZPASS	typeref:typename:std::map<Value *,Value * >	file:
+runOnModule	DFUZZPASS.cpp	/^    bool runOnModule(Module & M) {$/;"	f	struct:__anonb3b551400111::DFUZZPASS	typeref:typename:bool	file:
+switch_map	DFUZZPASS.cpp	/^std::map < BasicBlock *, std::set < BasicBlock * >> switch_map;$/;"	v	typeref:typename:std::map<BasicBlock *,std::set<BasicBlock * >>
+tar_ins	DFUZZPASS.cpp	/^    std::set < Value * > tar_ins;$/;"	m	struct:__anonb3b551400111::DFUZZPASS	typeref:typename:std::set<Value * >	file:
+targetIns	DFUZZPASS.cpp	/^    std::vector < Value * > targetIns;$/;"	m	struct:__anonb3b551400111::DFUZZPASS	typeref:typename:std::vector<Value * >	file:
+targets	DFUZZPASS.cpp	/^    std::list < std::string > targets;$/;"	m	struct:__anonb3b551400111::DFUZZPASS	typeref:typename:std::list<std::string>	file:
+unresolvedCallSite	DFUZZPASS.cpp	/^std::set < Value *> unresolvedCallSite;$/;"	v	typeref:typename:std::set<Value * >
