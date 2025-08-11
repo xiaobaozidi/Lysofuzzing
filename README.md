@@ -158,6 +158,11 @@ lyso/repo/afl-fuzz -d -g out -c "$SHARED" -m 100M -i corpus -- program.fuzz $ARG
 Parameters:
 - `-g out` — Temporary directory for runtime results
 
+
+## Paper Artifact
+
+Our artifact is also aviable on [Zenodo] (https://zenodo.org/records/14714504). In contains the TTR (Time-to-Reach) and TTE (Time-to-Exposure) data for Table 2 in our paper.
+
 ## Contributing
 
 We welcome contributions to improve Lyso and integrate additional DGFs into the `magma_dgf` environment. Please feel free to submit pull requests or open issues for any bugs or feature requests.
@@ -172,7 +177,3 @@ If you use Lyso or our benchmark `magma_dgf` in your research, please cite our p
   author={Bao, Andrew and Zhao, Wenjia and Wang, Yanhao and Cheng, Yueqiang and McCamant, Stephen and Yew, Pen-Chung}
 }
 ```
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
