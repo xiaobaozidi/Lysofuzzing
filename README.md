@@ -33,7 +33,7 @@ lyso
 ├── fetch.sh
 ├── findings.sh
 ├── instrument.sh
-├── llvmpass # Lyso's Graph Construction
+├── llvmpass # Lyso's graph construction
 ├── preinstall.sh
 ├── repo # Lyso's main fuzzing loop, step tracking and instrumentation
 ├── runonce.sh
@@ -43,5 +43,39 @@ lyso
 └── targets # Static analysis result for magma target
 ```
 
+## 4. Run Lyso on other programs
 
+### Install Dependency
+
+```
+#!/bin/bash
+set -e
+
+apt-get update --fix-missing && \
+    apt-get install -y make build-essential git wget cmake gawk libboost-all-dev gdb 
+
+
+# Dowdload llvm-11
+
+mkdir -p /llvm-11
+wget https://github.com/llvm/llvm-project/releases/download/llvmorg-11.0.1/clang+llvm-11.0.1-x86_64-linux-gnu-ubuntu-16.04.tar.xz
+tar -xf clang+llvm-11.0.1-x86_64-linux-gnu-ubuntu-16.04.tar.xz  -C /llvm-11 --strip-components=1
+rm clang+llvm-11.0.1-x86_64-linux-gnu-ubuntu-16.04.tar.xz
+
+apt-get install -y python3 python3-dev python3-pip
+pip3 install --upgrade pip
+pip3 install networkx pydot
+pip3 install wllvm
+
+```
+
+### build Graph Construction
+
+```
+cd llvmpass
+./compile_graphpass.sh
+
+```
+
+### 
 
