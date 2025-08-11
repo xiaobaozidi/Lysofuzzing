@@ -10,13 +10,26 @@ We provide a modified `magma_dgf` directory, which includes changes to the bench
 
 The `magma_dgf` currently supports multiple DGFs, including **Lyso**, **Titan**, **SelectFuzz**, **AFLGo**, and **FishFuzz**.  
 One challenge in evaluating DGFs is that they often use different benchmarks, making it difficult to compare their effectiveness.  
-Our goal is to integrate more DGFs into a standardized benchmark, so feel free to contribute additional ones.
+Another challenge is that setting up the fuzzing environment for DGFs can be complex and time-consuming.  
+
+The `magma_dgf` aims to address these issues by providing a unified and ready-to-use environment.  
+Our goal is to integrate more DGFs into a standardized benchmark (i.e., Magma), so feel free to contribute additional ones.
+
+To add a new DGF to `magma_dgf`, place it under `magma_dgf/fuzzers` and follow the standard structure by providing:  
+- `build.sh`  
+- `fetch.sh`  
+- `findings.sh`  
+- `instrument.sh`  
+- `preinstall.sh`  
+- `runonce.sh`  
+- `run.sh`  
+- Any additional logic or scripts specific to the new DGF
 
 ## 3. Lyso Structure
 ```
 lyso
 ├── build.sh    
-├── compilei_fuzzer.sh
+├── compile_fuzzer.sh
 ├── fetch.sh
 ├── findings.sh
 ├── instrument.sh
@@ -25,7 +38,7 @@ lyso
 ├── repo # Lyso's main fuzzing loop, step tracking and instrumentation
 ├── runonce.sh
 ├── run.sh
-├── scripts # Lyos's distance calculation
+├── scripts # Lyso's distance calculation
 ├── src # Fuzzer driver
 └── targets # Static analysis result for magma target
 ```
