@@ -1,3 +1,0 @@
-/Lyso/llvmpass/GraphPass/build/CMakeFiles/rebuild_cache.dir
-/Lyso/llvmpass/GraphPass/build/CMakeFiles/GraphPass.dir
-/Lyso/llvmpass/GraphPass/build/CMakeFiles/edit_cache.dir

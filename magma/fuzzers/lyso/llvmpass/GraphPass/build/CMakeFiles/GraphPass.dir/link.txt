@@ -1,1 +1,0 @@
-/llvm-11/bin/clang++ -fPIC   -shared  -o libGraphPass.so CMakeFiles/GraphPass.dir/GraphPass.o CMakeFiles/GraphPass.dir/CallGraph.o CMakeFiles/GraphPass.dir/TypeAnalysis.o CMakeFiles/GraphPass.dir/PointerAnalysis.o CMakeFiles/GraphPass.dir/CFGReachabilityAnalysis.o 
