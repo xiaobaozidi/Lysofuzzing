@@ -2,9 +2,9 @@
 
 ## 1. Introduction
 This Git repo provides the prototype of Lyso. 
-For more techniques details, check out paper link [paper link](https://www.usenix.org/conference/usenixsecurity25/presentation/bao-andrew)
+For more techniques details, check out [paper](https://www.usenix.org/system/files/conference/usenixsecurity25/sec25cycle1-prepub-1022-bao.pdf)
 
-##2. Run Lyso on Magma
+## 2. Run Lyso on Magma
 To run Lyso on the Magma benchmark, follow the [official Magma instructions](https://hexhive.epfl.ch/magma/docs/getting-started.html) to start fuzzing.  
 We provide a modified `magma_dgf` directory, which includes changes to the benchmark environment settings. Please use this version for compatibility.  
 
