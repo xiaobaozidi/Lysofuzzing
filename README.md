@@ -13,21 +13,22 @@ One challenge in evaluating DGFs is that they often use different benchmarks, ma
 Our goal is to integrate more DGFs into a standardized benchmark, so feel free to contribute additional ones.
 
 ## 3. Lyso Structure
+```
 lyso
 ├── build.sh    
-├── compilei\_fuzzer.sh
+├── compilei_fuzzer.sh
 ├── fetch.sh
 ├── findings.sh
 ├── instrument.sh
-├── llvmpass
+├── llvmpass # Lyso's Graph Construction
 ├── preinstall.sh
-├── repo
+├── repo # Lyso's main fuzzing loop, step tracking and instrumentation
 ├── runonce.sh
 ├── run.sh
-├── scripts
-├── src
-└── targets
-
+├── scripts # Lyos's distance calculation
+├── src # Fuzzer driver
+└── targets # Static analysis result for magma target
+```
 
 
 
