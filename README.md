@@ -152,7 +152,7 @@ Parameters:
 ### 4.9 Run Lyso
 
 ```bash
-lyso/repo/afl-fuzz -d -g out -c "$SHARED" -m 100M -i corpus -- program.fuzz $ARGS 2>&1
+lyso/repo/afl-fuzz -d -g out -c "$SHARED" -m 100M -i corpus -- p.fuzz $ARGS 2>&1
 ```
 
 Parameters:
