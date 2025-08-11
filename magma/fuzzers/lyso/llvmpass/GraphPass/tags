@@ -1,0 +1,115 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+AddressTakenFuncs	GraphPass.h	/^  FuncSet AddressTakenFuncs;$/;"	m	struct:GlobalContext
+AliasIndirectCallMap	GraphPass.h	/^  IndirectCalleeMap AliasIndirectCallMap;$/;"	m	struct:GlobalContext
+BB2ID	CFGReachabilityAnalysis.h	/^  std::unordered_map<const BasicBlock *, IdentifierType> BB2ID;$/;"	m	class:CFGraph
+BB2RealID	CFGReachabilityAnalysis.h	/^  std::unordered_map<const BasicBlock *, IdentifierType> BB2RealID;$/;"	m	class:CFGraph
+BBID	CFGReachabilityAnalysis.h	/^  std::unordered_map<const BasicBlock *, IdentifierType> BBID;$/;"	m	class:CFGReachability
+BBIdName	GraphPass.h	/^  BBIdToNameMap BBIdName;$/;"	m	struct:GlobalContext
+BBIdToNameMap	GraphPass.h	/^typedef unordered_map<IdentifierType, std::string> BBIdToNameMap;$/;"	t
+CALL_GRAPH_H	CallGraph.h	2;"	d
+CFGReachability	CFGReachabilityAnalysis.cc	/^CFGReachability::CFGReachability(const Function& F) :$/;"	f	class:CFGReachability
+CFGReachability	CFGReachabilityAnalysis.h	/^class CFGReachability {$/;"	c
+CFGReachabilityAnalysis	CFGReachabilityAnalysis.h	/^    CFGReachabilityAnalysis(GlobalContext *Ctx_) : Ctx(Ctx_) {};$/;"	f	class:CFGReachabilityAnalysis
+CFGReachabilityAnalysis	CFGReachabilityAnalysis.h	/^class CFGReachabilityAnalysis {$/;"	c
+CFGraph	CFGReachabilityAnalysis.cc	/^CFGraph::CFGraph(GlobalContext** Ctx_, const Function& F): $/;"	f	class:CFGraph
+CFGraph	CFGReachabilityAnalysis.h	/^class CFGraph {$/;"	c
+CallGraph	CallGraph.h	/^  CallGraph(GlobalContext *Ctx_) : Ctx(Ctx_) {}  $/;"	f	class:CallGraph
+CallGraph	CallGraph.h	/^class CallGraph {$/;"	c
+CallInstSet	GraphPass.h	/^typedef llvm::SmallPtrSet<llvm::CallInst*, 8> CallInstSet;$/;"	t
+CalleeMap	GraphPass.h	/^typedef DenseMap<llvm::Function*, FuncSet> CalleeMap;$/;"	t
+CalleeMaps	GraphPass.h	/^  CalleeMap CalleeMaps;$/;"	m	struct:GlobalContext
+CallerMap	GraphPass.h	/^typedef DenseMap<Function*, CallInstSet> CallerMap;$/;"	t
+CallerMaps	GraphPass.h	/^  CallerMap CallerMaps;$/;"	m	struct:GlobalContext
+Ctx	CFGReachabilityAnalysis.h	/^    GlobalContext *Ctx;$/;"	m	class:CFGReachabilityAnalysis
+Ctx	CFGReachabilityAnalysis.h	/^  GlobalContext **Ctx;$/;"	m	class:CFGraph
+Ctx	CallGraph.h	/^  GlobalContext *Ctx;$/;"	m	class:CallGraph
+Ctx	PointerAnalysis.h	/^  GlobalContext *Ctx;$/;"	m	class:PointerAnalysis
+Ctx	TypeAnalysis.h	/^     GlobalContext *Ctx;$/;"	m	class:TypeAnalysis
+DL	TypeAnalysis.h	/^     const DataLayout *DL;$/;"	m	class:TypeAnalysis
+DotFile	GraphPass.h	/^  string DotFile;$/;"	m	struct:GlobalContext
+FunIdMap	GraphPass.h	/^  FunIdentifiersMap FunIdMap;$/;"	m	struct:GlobalContext
+FunIdentifiersMap	GraphPass.h	/^typedef unordered_map<llvm::Function*, IdentifierType> FunIdentifiersMap;$/;"	t
+FuncSet	GraphPass.h	/^typedef llvm::SmallPtrSet<llvm::Function*, 8> FuncSet;$/;"	t
+GRAPH_PASS_H	GraphPass.h	2;"	d
+GlobalContext	GraphPass.h	/^struct GlobalContext {$/;"	s
+GlobalCtx	GraphPass.cc	/^GlobalContext GlobalCtx;$/;"	v
+GraphPass	GraphPass.cc	/^    GraphPass() : ModulePass(ID) {}$/;"	f	struct:__anon1::GraphPass
+GraphPass	GraphPass.cc	/^  struct GraphPass : public ModulePass {$/;"	s	namespace:__anon1	file:
+ID	GraphPass.cc	/^    static char ID;$/;"	m	struct:__anon1::GraphPass	file:
+ID	GraphPass.cc	/^char GraphPass::ID = 0;$/;"	m	class:GraphPass	file:
+ID2BB	CFGReachabilityAnalysis.h	/^  std::unordered_map<IdentifierType, const BasicBlock *> ID2BB;$/;"	m	class:CFGraph
+IDtoBB	CFGReachabilityAnalysis.h	/^  std::vector<const BasicBlock *> IDtoBB;$/;"	m	class:CFGReachability
+IdentifierType	GraphPass.h	/^typedef std::uint64_t IdentifierType;$/;"	t
+IndirectCallSite	GraphPass.h	/^  IndirectCallSiteMap IndirectCallSite;$/;"	m	struct:GlobalContext
+IndirectCallSiteMap	GraphPass.h	/^typedef DenseMap<llvm::Function*, CallInstSet> IndirectCallSiteMap;$/;"	t
+IndirectCalleeMap	GraphPass.h	/^typedef DenseMap<llvm::Function*, FuncSet> IndirectCalleeMap;$/;"	t
+Int8PtrTy	TypeAnalysis.h	/^     Type *Int8PtrTy;$/;"	m	class:TypeAnalysis
+IntPtrTy	TypeAnalysis.h	/^     Type *IntPtrTy;$/;"	m	class:TypeAnalysis
+POINTER_ANALYSIS_H	PointerAnalysis.h	2;"	d
+PointerAnalysis	PointerAnalysis.h	/^  PointerAnalysis(GlobalContext *Ctx_) : Ctx(Ctx_) {}$/;"	f	class:PointerAnalysis
+PointerAnalysis	PointerAnalysis.h	/^class PointerAnalysis {$/;"	c
+PrintFunCFG	CFGReachabilityAnalysis.cc	/^void CFGReachabilityAnalysis::PrintFunCFG(const Function* func){$/;"	f	class:CFGReachabilityAnalysis
+REACHABILITY_ANALYSIS_H	CFGReachabilityAnalysis.h	9;"	d
+TYPE_ANALYSIS_H	TypeAnalysis.h	2;"	d
+TypeAnalysis	TypeAnalysis.h	/^     TypeAnalysis(GlobalContext *Ctx_) : Ctx(Ctx_) {};$/;"	f	class:TypeAnalysis
+TypeAnalysis	TypeAnalysis.h	/^class TypeAnalysis {$/;"	c
+TypeIndirectCallMap	GraphPass.h	/^  IndirectCalleeMap TypeIndirectCallMap;$/;"	m	struct:GlobalContext
+ValToFuncMap	GraphPass.h	/^  ValueToFuncMap ValToFuncMap;$/;"	m	struct:GlobalContext
+ValueToFuncMap	GraphPass.h	/^typedef unordered_map<llvm::Value*, llvm::Function*> ValueToFuncMap;$/;"	t
+addAliasIndirectCallEdge	PointerAnalysis.cc	/^void PointerAnalysis::addAliasIndirectCallEdge(Function *srcNode, FuncSet &destNode){$/;"	f	class:PointerAnalysis
+addCallerMap	CallGraph.cc	/^void CallGraph::addCallerMap(Function *callee, CallInst* callInst){$/;"	f	class:CallGraph
+addEdge	CallGraph.cc	/^void CallGraph::addEdge(Function *srcNode, FuncSet &destNode){$/;"	f	class:CallGraph
+addFunc	TypeAnalysis.cc	/^void TypeAnalysis::addFunc(Function *Func){$/;"	f	class:TypeAnalysis
+addIndirectCallSite	TypeAnalysis.cc	/^void TypeAnalysis::addIndirectCallSite(Function *srcFun, CallInst* CI){$/;"	f	class:TypeAnalysis
+addNode	CallGraph.cc	/^void CallGraph::addNode(Function *Node, IdentifierType ID){$/;"	f	class:CallGraph
+addToWorkList	PointerAnalysis.cc	/^void PointerAnalysis::addToWorkList(Instruction *inst){$/;"	f	class:PointerAnalysis
+addTypeIndirectCallEdge	TypeAnalysis.cc	/^void TypeAnalysis::addTypeIndirectCallEdge(Function *srcNode, FuncSet &destNode){$/;"	f	class:TypeAnalysis
+addValToFuncMap	CallGraph.cc	/^void CallGraph::addValToFuncMap(Function *func) { Ctx->ValToFuncMap[func] = func; }$/;"	f	class:CallGraph
+adjMatrix	CFGReachabilityAnalysis.h	/^  llvm::BitVector* adjMatrix;$/;"	m	class:CFGraph
+adjMatrix	GraphPass.h	/^  llvm::BitVector* adjMatrix;$/;"	m	struct:GlobalContext
+analyzed	CFGReachabilityAnalysis.h	/^  ReachableSet analyzed;$/;"	m	class:CFGReachability
+buildAdjMatrix	CFGReachabilityAnalysis.cc	/^void CFGraph::buildAdjMatrix(const Function& F){$/;"	f	class:CFGraph
+buildFunCFGMap	CFGReachabilityAnalysis.cc	/^void CFGReachabilityAnalysis::buildFunCFGMap(const Function* func){$/;"	f	class:CFGReachabilityAnalysis
+findCalleesByType	TypeAnalysis.cc	/^void TypeAnalysis::findCalleesByType(CallInst *CI, FuncSet &FS){$/;"	f	class:TypeAnalysis
+funCFGMap	CFGReachabilityAnalysis.h	/^    std::unordered_map<const Function *, CFGraph *> funCFGMap;$/;"	m	class:CFGReachabilityAnalysis
+funName	CFGReachabilityAnalysis.h	/^  string funName;$/;"	m	class:CFGraph
+funSize	CFGReachabilityAnalysis.h	/^  IdentifierType funSize;$/;"	m	class:CFGraph
+funcReachMap	CFGReachabilityAnalysis.h	/^    std::unordered_map<const Function *, CFGReachability *> funcReachMap;$/;"	m	class:CFGReachabilityAnalysis
+fuzzyTypeMatch	TypeAnalysis.cc	/^bool TypeAnalysis::fuzzyTypeMatch(Type *Ty1, Type *Ty2){$/;"	f	class:TypeAnalysis
+getDebugLoc	GraphPass.cc	/^static void getDebugLoc(const Instruction *I, std::string &Filename,$/;"	f	file:
+getPointsToFunctions	PointerAnalysis.cc	/^llvm::SmallPtrSet<llvm::Function*, 8> PointerAnalysis::getPointsToFunctions(Value *val, $/;"	f	class:PointerAnalysis
+getReachability	CFGReachabilityAnalysis.cc	/^CFGReachability* CFGReachabilityAnalysis::getReachability(const Function* func){$/;"	f	class:CFGReachabilityAnalysis
+initAdjMatrix	CFGReachabilityAnalysis.cc	/^void CFGReachabilityAnalysis::initAdjMatrix(){$/;"	f	class:CFGReachabilityAnalysis
+isBBReachable	CFGReachabilityAnalysis.cc	/^bool CFGReachabilityAnalysis::isBBReachable(const BasicBlock *Src, const BasicBlock *Dst) {$/;"	f	class:CFGReachabilityAnalysis
+isBlacklisted	GraphPass.cc	/^bool isBlacklisted(const Function *F) {$/;"	f
+isReachable	CFGReachabilityAnalysis.cc	/^bool CFGReachability::isReachable(const BasicBlock *Src, const BasicBlock* Dst) {$/;"	f	class:CFGReachability
+isReachable	CFGReachabilityAnalysis.cc	/^bool CFGReachabilityAnalysis::isReachable(const Instruction* Src, const Instruction* Dst) {$/;"	f	class:CFGReachabilityAnalysis
+isReachableInBlock	CFGReachabilityAnalysis.cc	/^bool CFGReachabilityAnalysis::isReachableInBlock(const Instruction* Src, $/;"	f	class:CFGReachabilityAnalysis
+llvm	GraphPass.cc	/^namespace llvm {$/;"	n	file:
+mapReachability	CFGReachabilityAnalysis.cc	/^void CFGReachability::mapReachability(const BasicBlock *Dst) {$/;"	f	class:CFGReachability
+numBBHasID	CFGReachabilityAnalysis.h	/^  IdentifierType numBBHasID;$/;"	m	class:CFGraph
+override	GraphPass.cc	/^    bool runOnModule(Module &M) override;$/;"	m	struct:__anon1::GraphPass	file:
+pointToSet	PointerAnalysis.h	/^  map<llvm::Value *, set<llvm::Value *>> pointToSet;$/;"	m	class:PointerAnalysis
+pointsTo	PointerAnalysis.cc	/^void PointerAnalysis::pointsTo(llvm::Value *from, llvm::Value *to){$/;"	f	class:PointerAnalysis
+printAddressTakenFunc	TypeAnalysis.cc	/^void TypeAnalysis::printAddressTakenFunc(){$/;"	f	class:TypeAnalysis
+printAdjMatrix	CFGReachabilityAnalysis.cc	/^void CFGraph::printAdjMatrix(){$/;"	f	class:CFGraph
+printGraph	CFGReachabilityAnalysis.cc	/^void CFGraph::printGraph(){$/;"	f	class:CFGraph
+printGraph	CallGraph.cc	/^void CallGraph::printGraph(){$/;"	f	class:CallGraph
+printNode	CallGraph.cc	/^void CallGraph::printNode(){$/;"	f	class:CallGraph
+printPointToSet	PointerAnalysis.cc	/^void PointerAnalysis::printPointToSet() {$/;"	f	class:PointerAnalysis
+processWorkList	PointerAnalysis.cc	/^void PointerAnalysis::processWorkList() {$/;"	f	class:PointerAnalysis
+reachable	CFGReachabilityAnalysis.h	/^  ReachableSet* reachable;$/;"	m	class:CFGReachability
+registerGraphPass	GraphPass.cc	/^static void registerGraphPass(const PassManagerBuilder &,$/;"	f	file:
+resolvePointsTo	PointerAnalysis.cc	/^PointerAnalysis::resolvePointsTo(Value *val, llvm::SmallPtrSet<llvm::Function*, 8> &functionSet, $/;"	f	class:PointerAnalysis
+runOnModule	GraphPass.cc	/^bool GraphPass::runOnModule(Module &M){$/;"	f	class:GraphPass
+setVertixSize	CFGReachabilityAnalysis.cc	/^void CFGReachabilityAnalysis::setVertixSize(unsigned int size){$/;"	f	class:CFGReachabilityAnalysis
+vertixSize	CFGReachabilityAnalysis.h	/^    unsigned int vertixSize;$/;"	m	class:CFGReachabilityAnalysis
+workList	PointerAnalysis.h	/^  list<llvm::Instruction *> workList;$/;"	m	class:PointerAnalysis
+~CFGReachability	CFGReachabilityAnalysis.cc	/^CFGReachability::~CFGReachability() {$/;"	f	class:CFGReachability
+~CFGReachabilityAnalysis	CFGReachabilityAnalysis.cc	/^CFGReachabilityAnalysis::~CFGReachabilityAnalysis() {$/;"	f	class:CFGReachabilityAnalysis
+~CFGraph	CFGReachabilityAnalysis.cc	/^CFGraph::~CFGraph() {$/;"	f	class:CFGraph
