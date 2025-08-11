@@ -164,7 +164,7 @@ We welcome contributions to improve Lyso and integrate additional DGFs into the 
 
 ## Citation
 
-If you use Lyso in your research, please cite our paper:
+If you use Lyso or our benchmark `magma_dgf` in your research, please cite our paper:
 
 ```bibtex
 @article{baoalarms,
