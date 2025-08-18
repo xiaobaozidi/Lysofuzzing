@@ -161,7 +161,7 @@ Parameters:
 
 ## Paper Artifact
 
-Our artifact is also aviable on [Zenodo] (https://zenodo.org/records/14714504). In contains the TTR (Time-to-Reach) and TTE (Time-to-Exposure) data for Table 2 in our paper.
+Our artifact is also aviable on [Zenodo](https://zenodo.org/records/14714504). In contains the TTR (Time-to-Reach) and TTE (Time-to-Exposure) data for Table 2 in our paper.
 
 ## Contributing
 
