@@ -2,7 +2,7 @@
 
 ## 1. Introduction
 
-This Git repo provides the prototype of Lyso. For more technical details, check out the [paper](https://www.usenix.org/system/files/conference/usenixsecurity25/sec25cycle1-prepub-1022-bao.pdf).
+This Git repo provides the prototype of Lyso. For more technical details, check out the [paper](https://www.usenix.org/system/files/usenixsecurity25-bao-andrew.pdf).
 
 ## 2. Run Lyso on Magma
 
