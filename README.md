@@ -97,7 +97,7 @@ Lyso relies on static analysis results (i.e., source–sink traces) to achieve s
 
 ### 4.5 Generate Bitcode File
 
-Use LLVM to generate bitcode file for the target program:
+Use WLLVM to generate bitcode file for the target program:
 
 ```bash
 export CC="wllvm"
