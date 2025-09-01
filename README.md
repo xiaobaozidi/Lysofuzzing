@@ -16,6 +16,7 @@ The `magma_dgf` currently supports multiple DGFs, including:
 - **SelectFuzz**
 - **AFLGo**
 - **FishFuzz**
+- **ParmeSan**
 
 ### Challenges in DGF Evaluation
 
