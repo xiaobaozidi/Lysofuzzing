@@ -1,0 +1,14 @@
+# LLVM source (extracted from tar.gz)
+llvm_tools/llvm-4.0.0.src/
+
+# LLVM build directory
+llvm_tools/build/
+
+# AFL build artifacts
+repo/*.o
+repo/*.so
+repo/afl-*
+!repo/afl-*.c
+
+# SVF binary
+svf-bin/wpa

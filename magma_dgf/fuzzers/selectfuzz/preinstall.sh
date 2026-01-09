@@ -28,7 +28,15 @@ apt-get update --fix-missing && \
 #mv libcxx-4.0.0.src /build/llvm_tools/llvm-4.0.0.src/projects/libcxx
 #mv libcxxabi-4.0.0.src /build/llvm_tools/llvm-4.0.0.src/projects/libcxxabi
 
-
+# Extract LLVM source from compressed archive
+echo "Extracting LLVM source code..."
+cd $FUZZER/llvm_tools
+if [ ! -d "llvm-4.0.0.src" ]; then
+    tar xzf llvm-4.0.0.src.tar.gz
+    echo "✓ LLVM source extracted (395MB from 48MB archive)"
+else
+    echo "✓ LLVM source already extracted"
+fi
 
 mkdir -p $FUZZER/llvm_tools/build; cd $FUZZER/llvm_tools/build
 cmake -G "Ninja" \
