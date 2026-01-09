@@ -16,6 +16,7 @@ The `magma_dgf` currently supports multiple DGFs, including:
 - **SelectFuzz**
 - **AFLGo**
 - **FishFuzz**
+- **ParmeSan**
 
 ### Challenges in DGF Evaluation
 
@@ -172,8 +173,11 @@ We welcome contributions to improve Lyso and integrate additional DGFs into the 
 If you use Lyso or our benchmark `magma_dgf` in your research, please cite our paper:
 
 ```bibtex
-@article{baoalarms,
+@inproceedings{bao2025alarms,
   title={From Alarms to Real Bugs: Multi-target Multi-step Directed Greybox Fuzzing for Static Analysis Result Verification},
-  author={Bao, Andrew and Zhao, Wenjia and Wang, Yanhao and Cheng, Yueqiang and McCamant, Stephen and Yew, Pen-Chung}
+  author={Bao, Andrew and Zhao, Wenjia and Wang, Yanhao and Cheng, Yueqiang and McCamant, Stephen and Yew, Pen-Chung},
+  booktitle={34th USENIX Security Symposium (USENIX Security 25)},
+  pages={6977--6997},
+  year={2025}
 }
 ```
